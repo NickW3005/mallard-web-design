@@ -83,11 +83,42 @@ nav li {
     background: url(../images/programming-background-2000x1500.jpg) no-repeat center;
 }
 
+#info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-card {
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    margin: 5px 10px;
+    background: url(../images/turned-gray-laptop-computer.jpg) no-repeat center;
+}
+
+.info-card h3 {
+    color: #ffffff;
+    margin-top: 15px;
+    font-size: 2rem;
+}
+
+hr {
+    color: #ffffff;
+    margin: 0 10px;
+}
+
 /* styles for screens 768px and up */
 
 @media screen and (min-width: 768px) {
-    
-}
+    #info {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    }
+
 
 /* styles for screen sizes 1440px and up */
 
